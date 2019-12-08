@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./images/joshylib1.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Book Library</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <img src="./images/joshylib.png" alt="">
+    <button class="add-book">Add Book</button>
+  </nav>
+  <div class="container">
+
+    <div class="wrapper">
+
+    </div>
+  </div>
+
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate submit">
+
+      <div class="modal-container">
+        <label for="title"><b>Book Title</b></label>
+        <input type="text" placeholder="Enter book title" name="title" required>
+
+        <label for="author"><b>Book Author</b></label>
+        <input type="text" placeholder="Enter book author" name="author" required>
+        <label for="page"><b>Book Pages</b></label>
+        <input type="number" placeholder="Enter number of pages" name="page" required>
+        <label for="year"><b>Book Year</b></label>
+        <input type="number" placeholder="Enter book published year" name="year" required>
+        <label for="year"><b>Book Cover</b></label>
+        <input type="text" placeholder="Enter book cover image CDN" name="image" required>
+
+        <button type="submit">Add Book</button>
+        <label>
+          <input type="checkbox" checked="checked" name="read"> I have read book
+        </label>
+      </div>
+
+      <div class="modal-container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <footer>Joshysmart • 2019</footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

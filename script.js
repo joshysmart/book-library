@@ -139,4 +139,5 @@ submitBook.addEventListener('submit', (e) => {
  bookLibrary.push(newBook)
  localStorage.setItem('Book', JSON.stringify(bookLibrary))
  newBook.addNewBook()
+ modal.style.display = 'none'
 })
